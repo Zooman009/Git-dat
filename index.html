@@ -1,100 +1,75 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <title></title>
-
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
-        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI</title>
 
     <style>
         body {
-            font-family: 'Lato', 'Sans-serif';
+            margin: 0px;
         }
 
-        .container {
-            display: flex;
+        .navbar {
+            background: #260064;
+        }
+
+        .navbar div {
+            display: none;
+        }
+
+        .navbar .toggle,
+        .navbar .brand {
+            display: inline-block;
 
         }
 
-        .container .item {
-            display: flex;
-            flex: 1;
+        .navbar .link {
+            display: block;
+            text-align: center;
+            padding: 1em;
+            text-decoration: none;
+            background: #330380;
+            color: wheat;
         }
 
-        .container .item .content {}
+        .navbar .link:hover,
+        .navbar .link:active {
+            color: #330380;
+            background: white;
+        }
 
-        .container .item .content .metadata {}
+        .navbar .brand {
+            width: 10em;
+            text-align: center;
+            padding: 1em;
+            color:white;
+        }
 
-        .container .item .content .metadata .title {}
+        .navbar a {
+            text-decoration: none;
+        }
 
-        .container .item .btn-group {}
+        .navbar .toggle {
+            padding: 1em;
+            color: black;
 
-        .container .item .btn-group .button {}
-
-        .container .item .btn-group .button a {}
-
-        .container .item .btn-group .button:hover {}
-
-        .container .item .btn-group .button:hover a {}
-
-        .item.featured {}
-
-        .item.associated {}
+        }
     </style>
 </head>
-
 <body>
+    <div class="navbar">
+        <a href="#" class="toggle" id="navHam"></a>
+        <a href="#" class="brand">Coding Awesome!</a>
 
-    <div class='container'>
-        <div class='item featured'>
-            <div class='content'>
-                <img src='https://d33xj74kbqkoqn.cloudfront.net/uploads/campsite/campsite_image/129/dissecting-rails-icon.jpg' width='200px'
-                    height='120px'>
-                <div class='metadata'>
-                    <h1 class='title'>My amazing title</h1>
-                    <h3>And a subtitle</h3>
-                </div>
-            </div>
-            <div class='btn-group'>
-                <div class='button'>
-                    <a href="#">
-                        <i class="fas fa-plus-circle"></i>
-                    </a>
-                </div>
-                <div class='button'>
-                    <a href="#">
-                        <i class="fas fa-times-circle"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="left">
+            <a href="#" class="link">Something cool</a>
+            <a href="#" class="link">Something funny</a>
         </div>
-        <div class='item associated'>
-            <div class='content'>
-                <img src='https://d32xj74kbqkoqn.cloudfront.net/uploads/guide/video_image/43/foundations-video-thumb.jpg' width='200px' height='120px'>
-                <div class='metadata'>
-                    <h1 class='title'>Another amazing post</h1>
-                </div>
-            </div>
-            <div class='btn-group'>
-                <div class='button'>
-                    <a href="#">
-                        <i class="fas fa-plus-circle"></i>
-                    </a>
-                </div>
-                <div class='button'>
-                    <a href="#">
-                        <i class="fas fa-times-circle"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="right">
+            <a href="#" class="link">Something weird</a>
         </div>
     </div>
-
 </body>
-
 </html>
